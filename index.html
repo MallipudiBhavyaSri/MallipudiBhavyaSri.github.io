@@ -6,7 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Management System</title>
     <style>
-        /* Your existing CSS styles */
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 25px;
+            height: 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -34,10 +103,11 @@
         </div>
 
         <h3>Search Books</h3>
-        <label for="bookTitle">Enter book title</label>
-        <input type="text" id="bookTitle" placeholder="Enter book title">
-
-        <button>Search</button>
+        <form>
+            <label for="bookTitle">Enter book title</label>
+            <input type="text" id="bookTitle" placeholder="Enter book title">
+            <button>Search</button>
+        </form>
 
         <h3>Available Books</h3>
         <ul>
